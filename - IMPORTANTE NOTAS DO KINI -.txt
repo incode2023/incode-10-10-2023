@@ -1,0 +1,149 @@
+1 - Abrir o console no VSCode apertando CTRL + J e escrever:
+
+npm install -D tailwindcss
+
+DEPOIS:
+
+npx tailwindcss init
+
+2 - Iniciar o Tailwind:
+
+npx tailwindcss -i ./css/input.css -o ./css/output.css --watch
+
+adicionar depois
+
+<div class="hero__link">
+                    <a href="https://incodeetecmcm.blogspot.com/p/nosso-projeto.html" class="videos-etec">
+                        <img src="imgs/etec-identidade-removebg-preview.png" alt="">
+                    </a>
+                </div>
+
+teste responsivo
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="videos.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="cadastro/cadastro.css">
+
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        @media screen and (max-width: 760px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        /* Exemplo de layout flexível */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .hero__section {
+            flex: 1;
+        }
+
+        .hero__link {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .hero__link a {
+            display: block;
+        }
+
+        .videos__container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .videos__container .hero__link {
+            flex: 1;
+            min-width: 150px; /* Tamanho mínimo para evitar que os botões se sobreponham */
+        }
+
+        /* Tornar as imagens responsivas */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="voltar"></button>
+
+    <script>
+        document.getElementById("voltar").addEventListener("click", function () {
+            window.history.back();
+        });
+    </script>
+
+    <div class="container">
+        <h1><b style="color: white;">VÍDEOS - GERAIS</h1>
+        <div class="ablabla">
+            <div class="hero__section">
+                <div class="hero__link">
+                    <a href="https://incodeetecmcm.blogspot.com/p/nosso-projeto.html" class="neon-button">
+                        <img src="imgs/logo.png" alt="">
+                        <p>Qual o nosso objetivo?</p>
+                    </a>
+                </div>
+                <div class="hero__videos">
+                    <div id="videos"></div>
+                </div>
+            </div>
+            <div class="videos__container">
+                <div class="hero__link">
+                    <a href="videoshtml.html" class="videos-button">
+                        <img src="imgs/html logo.png" alt="">
+                    </a>
+                </div>
+                </div>
+                <div class="hero__link">
+                    <a href="videoscss.html" class="videos-button">
+                        <img src="imgs/css logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hero__link">
+                    <a href="videosjavascript.html" class="videos-button">
+                        <img src="imgs/java script logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hero__link">
+                    <a href="videosjava.html" class="videos-button">
+                        <img src="imgs/java logo 1.png" alt="">
+                    </a>
+                </div>
+                <div class="hero__link">
+                    <a href="videospyhton.html" class="videos-button">
+                        <img src="imgs/python logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hero__link">
+                    <a href="videosphp.html" class="videos-button">
+                        <img src="imgs/php logo.png" alt="">
+                    </a>
+                </div>
+                <!-- Adicione mais botões de vídeo aqui -->
+            </div>
+        </div>
+        <script src=></script>
+    </div>
+</body>
+
+</html>

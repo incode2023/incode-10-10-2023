@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" type="text/css" href="videos.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="cadastro/cadastro.css">
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        @media screen and (max-width: 760px) {
+               body {
+                background-color: green;
+               }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="voltar"></button>
+    
+    <script>
+        document.getElementById("voltar").addEventListener("click", function () {
+            window.history.back();
+        });
+    </script>
+
+    <div class="container">
+        <h1> <b style="color: white;">VÍDEOS - GERAIS</h1>
+        <div class="ablabla">
+            <div class="hero__section">
+                <div class="hero__link">
+                    <a href="https://incodeetecmcm.blogspot.com/p/nosso-projeto.html" class="neon-button">
+                        <img src="imgs/logo.png" alt="">
+                        <p>Qual o nosso objetivo?</p>
+                    </a>
+                </div>
+                <div class="hero__videos">
+                    <div id="videos"></div>
+                </div>
+            </div>
+            <div class="videos__container">
+                <div class="hero__link">
+                    <a href="videoshtml.html" class="videos-button">
+                        <img src="imgs/html logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hero__link">
+                    <a href="videoscss.html" class="videos-button">
+                        <img src="imgs/css logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hero__link">
+                    <a href="videosjavascript.html" class="videos-button">
+                        <img src="imgs/java script logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hero__link">
+                    <a href="videosjava.html" class="videos-button">
+                        <img src="imgs/java logo 1.png" alt="">
+                    </a>
+                </div>
+                <div class="hero__link">
+                    <a href="videospyhton.html" class="videos-button">
+                        <img src="imgs/python logo.png" alt="">
+                    </a>
+                </div>
+                <div class="hero__link">
+                    <a href="videosphp.html" class="videos-button">
+                        <img src="imgs/php logo.png" alt="">
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+        <script src=></script>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+
+</html>

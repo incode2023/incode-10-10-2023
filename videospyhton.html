@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="videos.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="cadastro/cadastro.css">
+    <title>Python videos</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        @media screen and (max-width: 760px) {
+               body {
+                background-color: green;
+               }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: red;
+            }
+        }
+    </style>
+    <title>Python videos</title>
+</head>
+
+<body>
+    <button id="voltar"></button>
+
+    <script>
+        document.getElementById("voltar").addEventListener("click", function () {
+            window.history.back();
+        });
+    </script>
+  
+    
+    <div class="container">
+        
+        <h1> <b style="color: white;">VÍDEOS - </b><b style="color: yellow;">PY</b><b style="color: blue;">THON</b></h1>
+        <div class="videos-all">
+            <div id="videos"></div>
+            <div id="videos2"></div>
+        </div>
+        <script src="code.js"></script>
+
+
+
+
+</body>
+
+</html>
